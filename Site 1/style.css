@@ -1,0 +1,257 @@
+/* Design Général ------------------------------ */ 
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-image: url(images/rizieres.jpg);	
+	background-attachment: fixed;
+}
+
+
+/* Design Typographique --------------------------- */
+
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Vollkorn', serif;
+}
+
+p,a{
+	font-family: arial;
+
+}
+
+h1{
+	color: white;
+	font-size: 60px;
+	margin-left: 25px
+	
+}
+
+h2{
+	font-size: 50px;
+	text-align: center;
+	color: #0D73AA;
+}
+
+h3,h4,h5,h6{
+	text-align: center;
+}
+
+
+/* Design du menu -------------------------------- */
+
+
+header{
+	width: 100vw;
+	height: 100px;
+	background-color: #F1DCCC;
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center; 
+	position: fixed;
+	box-shadow: 0px 0px 40px black;
+}
+
+.menuFantome{
+	width: 100vw;
+	height: 100px;
+}
+
+.boutonMenu{
+	color: white;
+	text-decoration: none;
+	margin-right: 25px;
+}
+
+label{
+	font-size: 40px;
+	display: none;
+}
+
+#switch{
+	display: none;
+}
+
+nav a:hover{
+		background-color: #0D73AA;
+	}
+
+@media (max-width: 600px){
+	header{
+		display: block;
+	}
+	h1{
+		float: left;
+		font-size: 35px
+	}
+
+	label{
+		display: block;
+		float: right;
+	}
+
+	nav{
+		display: none;
+
+	}
+
+	#switch:checked + nav{
+		display: block;
+		clear: both;
+	}
+
+	nav a{
+		width: 100%;
+		display: block;
+		text-align: center;
+		background-color: #F1DCCC;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 4px solid white;
+	}
+	
+}
+
+
+/* Colonne Centrale -------------------------------- */
+
+
+.colonneCentrale {
+	width: 80vw;
+	min-height: 80vh;
+	background-color: rgba(255,255,255,0.78);
+	margin-left: 10vw;
+	box-shadow: 0px 0px 30px #F1DCCC;
+}
+@media(max-width: 600px){
+	.colonneCentrale{
+		width: 100vw;
+		margin-left: 0vw;
+	}
+}
+
+
+/* Section n°1 ---------------------------------- */
+
+
+.imageSection1 {
+	width: 80%;
+	margin-left: 10%;
+	border-radius: 25px;
+	margin-top: 5vh;
+}
+
+
+/* Section n°2 ---------------------------------- */
+
+
+.Section2{
+	width: 100%;
+	min-height: 45vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center; 
+}
+
+.carteSection2{
+	width: 25%;
+	min-height: 30vw;
+	background-color: #F1DCCC;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	border:4px solid #0D73AA;
+}
+
+.imageSection2{
+	width: 80%;
+	margin-left: 10%;
+}
+
+@media(max-width: 600px){
+
+	.Section2{
+		flex-direction: column;
+	}
+	.carteSection2{
+		width: 60%;
+	}
+}
+
+
+/* Section n°3 ---------------------------------- */
+
+
+.espaceFlex {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.MontFuji {
+	width: 50%;
+	border: 20px solid white;
+}
+
+.espaceFlex2 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.Secretsdebeaute {
+	width: 50%;
+	border: 20px solid white;   
+}
+
+.espaceFlex3 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.Hiroshieoakuniyoshi {
+	width: 50%;
+	border: 20px solid white;
+}
+
+.Commentaire {
+	width: 40%;
+}
+
+@media(max-width: 600px){
+
+	.espaceFlex{
+		flex-direction: column;
+	}
+	.espaceFlex2{
+		flex-direction: column;
+	}
+	.espaceFlex3{
+		flex-direction: column;
+	}
+
+	.carteSection3{
+		width: 60%;
+	}
+}
+
+/* Design du Footer ----------------------------- */
+
+
+footer{
+	width: 100vw;
+	height: 100px;
+	background-color: #F1DCCC;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+
+footer a{
+	color: white;
+	text-decoration: none;
+	margin: 15px;
+}
